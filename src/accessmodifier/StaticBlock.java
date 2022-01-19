@@ -22,28 +22,28 @@ public class StaticBlock {
 
 class StaticDemo1 {
 	StaticDemo1(){
-		System.out.println("StaticDemo1 Constructor");   // 2
+		System.out.println("StaticDemo1 Constructor");   	// 6
 	}
 	
 	static {
-		System.out.println("Static1");   // 2
+		System.out.println("Static1");   					// 3
 	}
 	
 	{
-		System.out.println("Instance Block1");					// 1
+		System.out.println("Instance Block1");				// 5
 	}
 }
 
 class StaticDemo2 extends StaticDemo1 {
 	StaticDemo2(){
-		System.out.println("StaticDemo2 Constructor");   // 2
+		System.out.println("StaticDemo2 Constructor");   	// 8
 	}
 	
 	static {
-		System.out.println("Static2");   // 2
+		System.out.println("Static2");   					// 4
 	}
 	
 	{
-		System.out.println("Instance Block2");					// 1
+		System.out.println("Instance Block2");				// 7
 	}
 }

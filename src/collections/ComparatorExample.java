@@ -14,6 +14,8 @@ public class ComparatorExample {
 		students.add(new Student(2 , "Tom"));
 		
 		Collections.sort(students, new IdComparator());		
+//		Collections.sort(students, new NameComparator());		
+
 		for(Student student: students) {
 			System.out.println(student.id + ": " + student.name);
 		}

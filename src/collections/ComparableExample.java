@@ -33,8 +33,8 @@ class Staff implements Comparable<Staff> {
 
 	@Override
 	public int compareTo(Staff o) {
-//		return this.id - o.id;						// sort by id
-		return this.name.compareTo(o.name); // sort by name
+		return this.id - o.id;				// sort by id
+//		return this.name.compareTo(o.name); // sort by name
 	}
 
 }
